@@ -1,0 +1,42 @@
+.homepage-container {
+    background-image: url('/assests/bg.png'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .primary-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .primary-btn:hover {
+    background-color: #0056b3;
+  }
+  

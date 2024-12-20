@@ -1,0 +1,32 @@
+<div class="booking-form-container">
+  <h1>Hotel Booking Form</h1>
+
+  <form (ngSubmit)="onSubmit()">
+    <!-- Name Field -->
+    <label for="name">Name</label>
+    <input type="text" id="name" [(ngModel)]="name" name="name" required>
+
+    <!-- Aadhaar Card Field -->
+    <label for="aadhaarCard">Aadhaar Card Number</label>
+    <input type="text" id="aadhaarCard" [(ngModel)]="aadhaarCard" name="aadhaarCard" required>
+    <label for="PhoneNumber">PhoneNumber</label>
+    <input type="Number" id="PhoneNumber" [(ngModel)]="PhoneNumber" name="PhoneNumber" required>
+    <label for="Points">Reward Points</label>
+    <input type="Number" id="Points" [(ngModel)]="Points" name="Points" required>
+
+    
+
+    <!-- Payment Method Field -->
+    <label for="paymentMethod">Payment Method</label>
+    <select id="paymentMethod" [(ngModel)]="paymentMethod" name="paymentMethod" required>
+      <option value="creditCard">Credit Card</option>
+      <option value="debitCard">Debit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="metamask">MetaMask</option>
+
+    </select>
+
+    <!-- Submit Button -->
+    <button type="submit">Book Hotel</button>
+  </form>
+</div>

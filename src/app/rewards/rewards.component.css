@@ -1,0 +1,139 @@
+/* Container Styling */
+.rewards-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #e0f7fa; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Coin Symbols */
+  .coin-symbols {
+    margin: 20px 0;
+    font-size: 3rem; /* Larger coin size */
+  }
+  
+  .coin {
+    margin: 0 5px;
+  }
+  
+  /* Points Information */
+  .points-info {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .points-info .points {
+    font-weight: bold;
+    color: #00796b;
+    font-size: 1.5rem;
+  }
+  
+  /* Reward Options */
+  .reward-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Individual Reward Option */
+  .reward-option {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  .reward-option h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .reward-option p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  
+  .reward-option button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  .reward-option button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* Message after claiming a reward */
+  .message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: green;
+    font-weight: bold;
+  }
+  /* Review Section */
+.review-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .rating, .comment {
+    margin-bottom: 20px;
+  }
+  
+  .rating label, .comment label {
+    font-size: 1.1rem;
+  }
+  
+  #rating {
+    width: 100px;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  
+  #comment {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .review-message {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+  }
+  

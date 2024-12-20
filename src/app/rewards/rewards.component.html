@@ -1,0 +1,62 @@
+<div class="rewards-container">
+    <h1>Claim Your Rewards</h1>
+    
+    <div class="points-info">
+      <p>You have <span class="points">{{ userPoints }}</span> points available.</p>
+      <p>Earn more points by engaging with our platform!</p>
+    </div>
+    
+    <div class="coin-symbols">
+      <span class="coin">💰</span> <!-- Coin symbol for illustration -->
+      <span class="coin">💰</span>
+      <span class="coin">💰</span>
+    </div>
+    
+    <div class="reward-options">
+      <div class="reward-option">
+        <h3>Reward 1</h3>
+        <p>100 Points</p>
+        <button (click)="claimReward(100)">Claim</button>
+      </div>
+      
+      <div class="reward-option">
+        <h3>Reward 2</h3>
+        <p>200 Points</p>
+        <button (click)="claimReward(200)">Claim</button>
+      </div>
+      
+      <div class="reward-option">
+        <h3>Reward 3</h3>
+        <p>500 Points</p>
+        <button (click)="claimReward(500)">Claim</button>
+      </div>
+    </div>
+  
+    <div class="message" *ngIf="message">{{ message }}</div>
+  </div>
+  <div class="review-section">
+    <h2>Leave a Review</h2>
+    
+    <div class="rating">
+      <label for="rating">Rate Us:</label>
+      <select id="rating" [(ngModel)]="userRating">
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+    </div>
+    
+    <div class="comment">
+      <label for="comment">Your Feedback:</label>
+      <textarea id="comment" [(ngModel)]="userComment" placeholder="Write your feedback..."></textarea>
+    </div>
+    
+    <button (click)="submitReview()">Submit Review</button>
+    
+    <div *ngIf="reviewMessage" class="review-message">
+      <p>{{ reviewMessage }}</p>
+    </div>
+  </div>
+  

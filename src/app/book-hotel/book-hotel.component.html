@@ -1,0 +1,38 @@
+<div class="book-hotel-container">
+    <h1>Search and Sort Hotels</h1>
+  
+    <!-- Search Input -->
+    <div class="search-bar">
+      <input 
+        type="text" 
+        placeholder="Search hotels by name..." 
+        [(ngModel)]="searchQuery"
+        (input)="filterHotels()" 
+      />
+    </div>
+  
+    <!-- Sort Options -->
+    <div class="sort-options">
+      <label>Sort By:</label>
+      <select [(ngModel)]="sortBy" (change)="sortHotels()">
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+        <option value="location">Location</option>
+      </select>
+    </div>
+  
+    <!-- Hotel List -->
+    <div class="hotel-list">
+      <div class="hotel-card" *ngFor="let hotel of filteredHotels">
+        <!-- Hotel Image -->
+        <img class="hotel-image" [src]="hotel.imageUrl" alt="{{ hotel.name }} image">
+        <h2>{{ hotel.name }}</h2>
+        <p>Price: ${{ hotel.price }}</p>
+        <p>Location: {{ hotel.location }}</p>
+        
+        <!-- View Button -->
+        <button (click)="goToHotelDetails(hotel.id)">View</button>
+      </div>
+    </div>
+  </div>
+  
